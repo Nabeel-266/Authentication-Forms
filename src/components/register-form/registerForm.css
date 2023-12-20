@@ -1,0 +1,210 @@
+.registerFormCont {
+  width: 35%;
+  background-color: rgb(250, 250, 250);
+  border-radius: 8px;
+  box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  padding: 8px 15px 20px 15px;
+  backdrop-filter: blur(10px);
+}
+
+.registerFormHdr {
+  padding: 0px 0px 8px 0px;
+  border-bottom: 2px solid #555;
+}
+
+.registerFormHdr h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #444;
+  font-weight: bold;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 4px 0px 4px;
+}
+
+.formFieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0px 16px 0px;
+}
+
+.inputFieldArea {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 12px 8px 6px 8px;
+  outline: none;
+  font-size: 0.95rem;
+  color: #444;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  transition: 0.2s linear all;
+}
+
+.inputField:focus {
+  border: 2px solid #007ccf;
+}
+
+.inputLabel {
+  position: absolute;
+  left: 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 0px 6px;
+  color: #444;
+  background-color: #fff;
+  pointer-events: none;
+  transform: translateY(0%);
+  transition: 0.3s ease all;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 6px;
+  height: 90%;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.inputField:focus + .inputLabel {
+  transform: translateY(-110%) !important;
+  font-size: 0.8rem !important;
+  color: #007ccf;
+}
+
+.additionalOption {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0px 4px 0px 4px;
+}
+
+.rememberMeSide {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rememberMe {
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+  pointer-events: none;
+}
+
+.forgotPassword {
+  color: #444;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.registerButton {
+  width: 100%;
+  padding: 8px 0px 8px 0px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  border: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+.registerButton:active {
+  transform: scale(0.98);
+  transition: 0.1s linear all;
+}
+
+.horizontalLine {
+  width: 100%;
+  position: relative;
+  margin: 12px 0px 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.horizontalLine :nth-child(1) {
+  width: 42%;
+  height: 2px;
+  background-color: #555;
+}
+
+.horizontalLine :nth-child(2) {
+  color: #444;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.horizontalLine :nth-child(3) {
+  width: 42%;
+  height: 2px;
+  background-color: #555;
+}
+
+.googleRegisterBtn {
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 9px 0px 9px 0px;
+  background-color: #444;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+}
+
+.googleRegisterBtn:active {
+  transform: scale(0.98);
+  transition: 0.1s linear all;
+}
+
+.googleRegisterBtn img {
+  width: 25px;
+  height: 25px;
+}
+
+.loginSuggestion {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.signinLink {
+  color: #007ccf;
+}
+
+.signinLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
